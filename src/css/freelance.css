@@ -1,0 +1,172 @@
+.freelance{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.f-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.f-left span:nth-child(1)
+.f-left span:nth-child(2){
+    font-size: 3.8rem;
+    color: var(--blue);
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+}
+.f-left span:nth-child(2){
+    color: var(--orange);
+}
+.f-left span:nth-child(3){
+    font-size: 0.9rem;margin-left: 1.3rem;
+    color: gray;
+    opacity: 0.8;
+    margin-top: 1rem;
+}
+.f-btn{
+    width: 12rem;
+    border-radius: 5rem;
+    background: var(--orange);
+}
+
+.f-right{
+    position: relative;
+    display: flex;align-items: center;
+    justify-content: center;
+}
+.main-circle{
+    width: 27rem;
+    height: 27rem;
+    border-radius: 50%;
+    box-shadow: var(--boxShadow);
+    z-index: 100;
+    right: -10rem;
+    top: 1rem;
+    background: var(--white);
+    animation: rotate 10s linear infinite;
+}
+.sec-circle{
+    position: absolute;
+    background: var(--white);
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--boxShadow);
+}
+.sec-circle:nth-child(1){
+    top: -1.5rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.sec-circle:nth-child(2){
+    bottom: -1.5rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.sec-circle:nth-child(3){
+    top: 7rem;
+    right: -2.5rem;
+}
+.sec-circle:nth-child(4){
+    top: 7.5rem;
+    left: -2.5rem;
+}
+.sec-circle:nth-child(5){
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.sec-circle img{
+    width: 100%;
+    height: auto;
+    transform: scale(.6);
+}
+.orange-circle{
+    position: absolute;
+    top: 10rem;
+    right: 0rem;
+    width: 13rem;
+    height: 13rem;
+    background: var(--orange);
+    border-radius: 50%;
+    z-index: -2;
+}
+.blue-circle{
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+    width: 13rem;
+    height: 13rem;
+    background: var(--blue);
+    border-radius: 50%;
+    z-index: -2;
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@media screen and (max-width:767px) {
+    .freelance{
+        margin-top: 3rem;
+    }
+    .f-left span:nth-child(1),
+    .f-left span:nth-child(2){
+        font-size: 1.7rem;
+    }
+    .f-left span:nth-child(3){
+        font-size: 0.8rem;
+    }
+    .f-right{
+        margin-top: 1.9rem;
+    }
+    .main-circle{
+        height: 13rem;
+        width: 13rem;
+    }
+    .sec-circle img{
+        transform: scale(.4);
+    }
+    .orange-circle,
+    .blue-circle{
+        width: 7rem;
+        height: 7rem;
+    }
+    .sec-circle{
+        width: 4rem;
+        height: 4rem;
+    }
+    .orange-circle{
+        top: 0rem;
+        right: auto;
+        left: 1rem;
+    }
+    .blue-circle{
+        right: 1rem;
+        top: 0rem;
+    }
+    .sec-circle:nth-child(3){
+        top: 5rem;
+        right: -1.5rem;
+    }
+    .sec-circle:nth-child(4){
+        top: 4rem;
+        left: -1.5rem;
+    }
+    
+}

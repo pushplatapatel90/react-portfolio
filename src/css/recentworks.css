@@ -1,0 +1,57 @@
+.works{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.swiper-wrapper{
+    margin-top: 3rem;
+    overflow: visible;
+}
+.swiper-slide{
+    width: 20rem;
+    /* height: 180px !important; */
+    border-radius: 1.5rem;
+    box-shadow: var(--boxShadow);
+}
+.swiper-slide img{
+    width: 100%;
+    /* height: 100%;
+    object-fit: cover; */
+    border-radius: 1.5rem;
+    box-shadow: var(--boxShadow);
+}
+.works .heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.works .heading span:nth-child(1){
+    font-size: 3.1rem;
+    font-weight: bold;
+    color: var(--blue);
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+}
+.works .heading span:nth-child(2){
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--orange);
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 2px;
+}
+@media screen and (max-width:767px) {
+    .swiper-slide img{
+        border-radius: 0.7rem;
+        height: 100%;
+    }
+    .swiper-slide{
+        width: 17rem !important;
+        height: 5.3rem;
+        border-radius: .7rem;
+    }
+    .works .heading span:nth-child(1){
+        font-size: 2.2rem;
+    }
+    .works .heading span:nth-child(2){
+        font-size: 2rem;
+    }
+}
